@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatureBloom Organics - Pure Organic Skincare & Natural Beauty Products</title>
+    <meta name="description" content="Discover NatureBloom Organics' range of handcrafted organic skincare. Experience natural, vegan, and cruelty-free beauty products for radiant, healthy skin.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #a7f3d0, #d1fae5); /* Light green to lighter green */
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1920x1080/D1FAE5/34D399?text=NatureBloom+Organics+Hero'); /* Placeholder for a natural, serene image */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3); /* Dark overlay for text readability */
+            z-index: -1;
+        }
+        .product-card {
+            transition: all 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-green-700">NatureBloom Organics</a>
+            <div class="space-x-6">
+                <a href="index.html" class="text-green-600 font-semibold border-b-2 border-green-600 pb-1">Home</a>
+                <a href="products.html" class="text-gray-700 hover:text-green-600 font-medium">Products</a>
+                <a href="contact.html" class="text-gray-700 hover:text-green-600 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg py-32 px-4 text-center text-white rounded-b-lg shadow-lg">
+        <div class="container mx-auto relative z-10">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight drop-shadow-lg">
+                Embrace Nature's Purest Touch: Organic Skincare for Radiant Beauty
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto drop-shadow-md">
+                Handcrafted organic skincare that nourishes, revitalizes, and brings out your natural radiance. Experience the difference of truly pure ingredients.
+            </p>
+            <a href="products.html" class="inline-block bg-green-600 text-white font-bold py-4 px-10 rounded-full shadow-xl hover:bg-green-700 transition duration-300 transform hover:scale-105 text-lg">
+                Shop Our Collection
+            </a>
+        </div>
+    </header>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-800 mb-12">Why Choose NatureBloom for Natural Beauty Products?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="p-6 rounded-xl shadow-md bg-green-50">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">100% Organic Ingredients</h3>
+                    <p class="text-gray-600">Sourced from sustainable farms, free from harmful chemicals and pesticides.</p>
+                </div>
+                <div class="p-6 rounded-xl shadow-md bg-green-50">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2zM12 18a8 8 0 100-16 8 8 0 000 16z"></path></svg>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Cruelty-Free & Vegan Skincare</h3>
+                    <p class="text-gray-600">Our products are never tested on animals and contain no animal-derived ingredients.</p>
+                </div>
+                <div class="p-6 rounded-xl shadow-md bg-green-50">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 12v10a1 1 0 001 1h3m10-11l2 2m0 0l7 7 7 7M19 12v10a1 1 0 001 1h3"></path></svg>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Eco-Friendly Packaging</h3>
+                    <p class="text-gray-600">Committed to sustainability with recyclable and biodegradable packaging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="py-16 px-4 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-green-800 mb-12">Our Bestselling Organic Skincare</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card">
+                    <img src="https://placehold.co/600x400/D1FAE5/34D399?text=Organic+Cleanser" alt="Radiant Glow Cleanser - Organic Facial Cleanser" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-green-700 mb-2">Radiant Glow Cleanser</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            Gently purifies, leaving skin soft and refreshed. Perfect for daily use.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-green-800">$24.99</span>
+                            <a href="products.html" class="bg-green-500 text-white py-2 px-4 rounded-full text-sm hover:bg-green-600 transition duration-300">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card">
+                    <img src="https://placehold.co/600x400/D1FAE5/34D399?text=Herbal+Moisturizer" alt="Deep Hydration Moisturizer - Herbal Skincare" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-green-700 mb-2">Deep Hydration Moisturizer</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            Long-lasting moisture with a non-greasy finish. Ideal for all skin types.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-green-800">$32.00</span>
+                            <a href="products.html" class="bg-green-500 text-white py-2 px-4 rounded-full text-sm hover:bg-green-600 transition duration-300">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card">
+                    <img src="https://placehold.co/600x400/D1FAE5/34D399?text=Revitalizing+Serum" alt="Youthful Elixir Serum - Anti-Aging Natural Beauty Product" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-green-700 mb-2">Youthful Elixir Serum</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            Visibly reduces fine lines and restores skin's youthful glow.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-green-800">$45.00</span>
+                            <a href="products.html" class="bg-green-500 text-white py-2 px-4 rounded-full text-sm hover:bg-green-600 transition duration-300">View Product</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="products.html" class="inline-block bg-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-800 transition duration-300 transform hover:scale-105">
+                    View All Organic Skincare Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-20 px-4 bg-green-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-800 mb-12">What Our Customers Say About NatureBloom Organics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <p class="text-lg text-gray-700 italic mb-4">
+                        "NatureBloom Organics has transformed my skin! I love how pure and effective their products are. My sensitive skin has never felt better."
+                    </p>
+                    <p class="font-semibold text-green-700">- Sarah L., Verified Customer</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <p class="text-lg text-gray-700 italic mb-4">
+                        "Finally, a brand that truly cares about natural ingredients and sustainability. The Deep Hydration Moisturizer is my absolute favorite!"
+                    </p>
+                    <p class="font-semibold text-green-700">- Jessica M., Skincare Enthusiast</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Mini Contact Section -->
+    <section class="bg-green-100 py-16 px-4 rounded-t-lg shadow-inner">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-800 mb-6">Ready to Experience NatureBloom's Vegan Skincare?</h2>
+            <p class="text-xl text-green-700 mb-8 max-w-2xl mx-auto">
+                Join our community and discover the secret to healthy, radiant skin.
+            </p>
+            <a href="contact.html" class="inline-block bg-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-800 transition duration-300 transform hover:scale-105">
+                Connect With Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4 mt-8 rounded-t-lg">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 NatureBloom Organics. All rights reserved.</p>
+            <p class="mt-2">Crafted with care by PixelPro Solutions.</p>
+        </div>
+    </footer>
+</body>
+</html>
